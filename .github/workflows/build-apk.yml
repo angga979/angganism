@@ -23,6 +23,9 @@ jobs:
       - name: Generate Android project
         run: flutter create --platforms=android .
 
+      - name: Remove default Flutter test
+        run: rm -rf test
+
       - name: Install dependencies
         run: flutter pub get
 
